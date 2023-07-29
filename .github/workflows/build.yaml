@@ -8,7 +8,7 @@ on:
 
 env:
   TEST_CODEBUNDLE_PATH: /app/codecollection/codebundles/hello_world/sli.robot
-  CURL_URL: http://localhost:3000/sli-log.html
+  CURL_URL: http://localhost:3000/hello_world/sli-log.html
 
 jobs:
   build-and-push-ghcr:
@@ -25,7 +25,7 @@ jobs:
       - name: Smoke Test Build
         run: |
           docker run -d -p 3000:3000 --name mycodecollection ghcr.io/${{ github.repository }}:latest 
-          docker exec -it mycodecollection bash -c "ro ${{ env.TEST_CODEBUNDLE_PATH }} && ls -R /robot_logs"
+          docker exec mycodecollection bash -c "ro ${{ env.TEST_CODEBUNDLE_PATH }} && ls -R /robot_logs"
           curl --fail-with-body ${{ env.CURL_URL }}
       - name: Push
         run: |
