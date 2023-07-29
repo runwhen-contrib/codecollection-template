@@ -2,7 +2,8 @@
     "name": "devtools",
     "shutdownAction": "none",
     "build": { "dockerfile": "Dockerfile" },
-    "updateRemoteUserUID":false,
+    "updateRemoteUserUID": false,
+    // "remoteUser": "python",
     "overrideCommand": false,
     "runArgs": [
         "-p",
@@ -13,7 +14,7 @@
     "forwardPorts": [
         3000
     ],
-    "workspaceFolder": "/app/codecollection",
+    "workspaceFolder": "/app/",
     // Configure tool-specific properties.
     "customizations": {
         // Configure properties specific to VS Code.

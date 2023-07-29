@@ -16,7 +16,7 @@ RUN apt-get update && \
 
 # Change the owner of all files inside /app to user and give full permissions
 RUN chown 1000:0 -R $WORKDIR
-RUN chmod -R 644 /app
+RUN chown 1000:0 -R /app/codecollection
 
 # Set the user to $USER
 USER python
