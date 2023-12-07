@@ -11,6 +11,11 @@ Suite Setup         Suite Initialization
 *** Tasks ***
 Check URL
     ${msg}=    MyKeywords.checkers.Check Url    ${MY_URL}    1
+    IF    "${msg}" == "True"
+        RW.Core.Add Pre To Report    The URL is healthy and responsive.
+    ELSE
+        RW.Core.Add Pre To Report    The URL is unhealthy and/or had a delayed response.
+    END
     RW.Core.Add Pre To Report    ${msg}
 
 
