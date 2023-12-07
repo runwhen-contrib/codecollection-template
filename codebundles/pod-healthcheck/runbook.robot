@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation       Checks for crashlooping pods
-Metadata            Author    Jon
+Metadata            Author    Jonathan
 Metadata            Display Name    Kubernetes Deployment Triage
 Metadata            Supports    Kubernetes,AKS,EKS,GKE,OpenShift
 
