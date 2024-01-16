@@ -15,7 +15,7 @@ A hello-world-style template for codecollection authors to get started writing c
 [![Build](https://github.com/runwhen-contrib/codecollection-template/actions/workflows/build.yaml/badge.svg)](https://github.com/runwhen-contrib/codecollection-template/actions/workflows/build.yaml)
 
 ## Getting Started
-Looking to be a contributor for CodeCollections or start your own? We'd love to collaborate! Head on over to our [public docs](https://docs.runwhen.com/public/runwhen-authors/getting-started-with-codecollection-development) to get started.
+Looking to be a contributor for CodeCollections or start your own? We'd love to collaborate! Head on over to our [public docs](https://docs.runwhen.com/public/v/runwhen-authors/codecollection-development/getting-started/running-your-first-codebundle) to get started.
 
 File Structure overview of devcontainer:
 ```
