@@ -20,3 +20,5 @@ RUN chown 1000:0 -R /app/codecollection
 
 # Set the user to $USER
 USER python
+ENV USER=python
+RUN chmod -R u+x /app/codecollection
