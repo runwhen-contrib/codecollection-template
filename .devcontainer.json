@@ -3,7 +3,6 @@
     "shutdownAction": "none",
     "build": { "dockerfile": "Dockerfile" },
     "updateRemoteUserUID": false,
-    // "remoteUser": "python",
     "overrideCommand": false,
     "runArgs": [
         "-p",
@@ -14,7 +13,7 @@
     "forwardPorts": [
         3000
     ],
-    "workspaceFolder": "/app/",
+    "workspaceFolder": "/home/runwhen/codecollection/",
     // Configure tool-specific properties.
     "customizations": {
         // Configure properties specific to VS Code.
@@ -48,12 +47,12 @@
                 ],
                 "robot.language-server.python": "/usr/local/bin/python",
                 "robot.pythonpath": [
-                    "/app",
-                    "/app/rw-public-codecollection/libraries",
-                    "/app/rw-public-codecollection/libraries/RW",
-                    "/app/codecollection/libraries",
-                    "/app/codecollection/libraries/RW",
-                    "/app/dev_facade"
+                    "/home/runwhen",
+                    "/home/runwhen/rw-public-codecollection/libraries",
+                    "/home/runwhen/rw-public-codecollection/libraries/RW",
+                    "/home/runwhen/codecollection/libraries",
+                    "/home/runwhen/codecollection/libraries/RW",
+                    "/home/runwhen/dev_facade"
                 ]
             }
         }
