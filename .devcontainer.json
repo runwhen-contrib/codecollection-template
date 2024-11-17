@@ -13,6 +13,9 @@
     "forwardPorts": [
         3000
     ],
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
     "workspaceFolder": "/home/runwhen/codecollection/",
     // Configure tool-specific properties.
     "customizations": {
