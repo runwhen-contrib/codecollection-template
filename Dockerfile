@@ -1,4 +1,4 @@
-FROM us-docker.pkg.dev/runwhen-nonprod-shared/public-images/codecollection-devtools:latest
+FROM --platform=linux/amd64 us-docker.pkg.dev/runwhen-nonprod-shared/public-images/codecollection-devtools:latest
 USER root
 
 ENV RUNWHEN_HOME=/home/runwhen
@@ -19,6 +19,10 @@ RUN if [ -f "requirements.txt" ]; then pip install --no-cache-dir -r requirement
 #    apt-get install -y --no-install-recommends net-tools && \
 #    apt-get clean && \
 #    rm -rf /var/lib/apt/lists/* /var/cache/apt
+
+# Install tree command
+RUN apt-get update && apt-get install -y tree vim && rm -rf /var/lib/apt/lists/*
+
 
 # Add runwhen user to sudoers with no password prompt
 RUN echo "runwhen ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
